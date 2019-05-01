@@ -1,0 +1,121 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLemos.Api.Identity", "server\NLemos.Api.Identity\NLemos.Api.Identity.csproj", "{9B30F7AD-1082-476B-B8F5-70BFC2986E6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "server", "server", "{445CC7E9-D10E-474A-A4D4-340B130856A6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLemos.Api.Framework", "server\NLemos.Api.Framework\NLemos.Api.Framework.csproj", "{864A7D8C-0DF8-4B1B-B07E-6B9B267C90BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A312AD2F-D727-4F87-AFFB-3A062FC6A5E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "server", "server", "{327B2A49-F8CF-4671-9A6D-2A391769F13F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLemos.Api.Framework.Tests", "tests\server\NLemos.Api.Framework.Tests\NLemos.Api.Framework.Tests.csproj", "{85EF7315-814B-4683-A8EC-EF6182BEF034}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLemos.Api.Framework.Tests.Web", "tests\server\NLemos.Api.Framework.Tests.Web\NLemos.Api.Framework.Tests.Web.csproj", "{5DCDF58A-2F9A-4D8A-9EF9-7EA497E2C55E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLemos.Api.Identity.Tests", "tests\server\NLemos.Api.Identity.Tests\NLemos.Api.Identity.Tests.csproj", "{CA41C59B-B1D4-4DBE-912A-AA95D3FEABA0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLemos.Tests.Shared", "tests\server\NLemos.Tests.Shared\NLemos.Tests.Shared.csproj", "{CBA7A515-0BFD-4BEF-8C88-F2C31355BFF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F4BF8AA8-F070-4DF0-913B-06568954CE3F}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLemos.EventHub", "server\NLemos.EventHub\NLemos.EventHub.csproj", "{97573853-719F-45D7-AAB2-8FE684ABC6BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLemos.Api.Gateway", "server\NLemos.Api.Gateway\NLemos.Api.Gateway.csproj", "{EDC9A46D-B391-41FD-92FD-91F55710FD17}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLemos.EventHub.Tests", "tests\server\NLemos.EventHub.Tests\NLemos.EventHub.Tests.csproj", "{CEAC221A-3167-4710-86C8-DF0C6DBF4711}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{703694BD-CC47-44F0-9F58-C34D117602D3}"
+	ProjectSection(SolutionItems) = preProject
+		docker\executeall.sh = docker\executeall.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{FF4FD0F7-93B0-4909-B82B-5A6D66BFD947}"
+	ProjectSection(SolutionItems) = preProject
+		docker\scripts\mongodb-setup.sh = docker\scripts\mongodb-setup.sh
+		docker\scripts\rabbitmq.sh = docker\scripts\rabbitmq.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mongodb", "mongodb", "{72DDEC13-7826-4031-9E0A-20DCE51DA10A}"
+	ProjectSection(SolutionItems) = preProject
+		docker\scripts\mongodb\docker-setup.sh = docker\scripts\mongodb\docker-setup.sh
+		docker\scripts\mongodb\Dockerfile = docker\scripts\mongodb\Dockerfile
+		docker\scripts\mongodb\run.sh = docker\scripts\mongodb\run.sh
+		docker\scripts\mongodb\set_mongodb_password.sh = docker\scripts\mongodb\set_mongodb_password.sh
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B30F7AD-1082-476B-B8F5-70BFC2986E6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B30F7AD-1082-476B-B8F5-70BFC2986E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B30F7AD-1082-476B-B8F5-70BFC2986E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B30F7AD-1082-476B-B8F5-70BFC2986E6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{864A7D8C-0DF8-4B1B-B07E-6B9B267C90BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{864A7D8C-0DF8-4B1B-B07E-6B9B267C90BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{864A7D8C-0DF8-4B1B-B07E-6B9B267C90BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{864A7D8C-0DF8-4B1B-B07E-6B9B267C90BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85EF7315-814B-4683-A8EC-EF6182BEF034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85EF7315-814B-4683-A8EC-EF6182BEF034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85EF7315-814B-4683-A8EC-EF6182BEF034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85EF7315-814B-4683-A8EC-EF6182BEF034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DCDF58A-2F9A-4D8A-9EF9-7EA497E2C55E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DCDF58A-2F9A-4D8A-9EF9-7EA497E2C55E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DCDF58A-2F9A-4D8A-9EF9-7EA497E2C55E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DCDF58A-2F9A-4D8A-9EF9-7EA497E2C55E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA41C59B-B1D4-4DBE-912A-AA95D3FEABA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA41C59B-B1D4-4DBE-912A-AA95D3FEABA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA41C59B-B1D4-4DBE-912A-AA95D3FEABA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA41C59B-B1D4-4DBE-912A-AA95D3FEABA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBA7A515-0BFD-4BEF-8C88-F2C31355BFF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA7A515-0BFD-4BEF-8C88-F2C31355BFF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA7A515-0BFD-4BEF-8C88-F2C31355BFF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA7A515-0BFD-4BEF-8C88-F2C31355BFF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97573853-719F-45D7-AAB2-8FE684ABC6BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97573853-719F-45D7-AAB2-8FE684ABC6BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97573853-719F-45D7-AAB2-8FE684ABC6BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97573853-719F-45D7-AAB2-8FE684ABC6BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDC9A46D-B391-41FD-92FD-91F55710FD17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDC9A46D-B391-41FD-92FD-91F55710FD17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDC9A46D-B391-41FD-92FD-91F55710FD17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDC9A46D-B391-41FD-92FD-91F55710FD17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEAC221A-3167-4710-86C8-DF0C6DBF4711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEAC221A-3167-4710-86C8-DF0C6DBF4711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEAC221A-3167-4710-86C8-DF0C6DBF4711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEAC221A-3167-4710-86C8-DF0C6DBF4711}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B30F7AD-1082-476B-B8F5-70BFC2986E6B} = {445CC7E9-D10E-474A-A4D4-340B130856A6}
+		{864A7D8C-0DF8-4B1B-B07E-6B9B267C90BA} = {445CC7E9-D10E-474A-A4D4-340B130856A6}
+		{327B2A49-F8CF-4671-9A6D-2A391769F13F} = {A312AD2F-D727-4F87-AFFB-3A062FC6A5E5}
+		{85EF7315-814B-4683-A8EC-EF6182BEF034} = {327B2A49-F8CF-4671-9A6D-2A391769F13F}
+		{5DCDF58A-2F9A-4D8A-9EF9-7EA497E2C55E} = {327B2A49-F8CF-4671-9A6D-2A391769F13F}
+		{CA41C59B-B1D4-4DBE-912A-AA95D3FEABA0} = {327B2A49-F8CF-4671-9A6D-2A391769F13F}
+		{CBA7A515-0BFD-4BEF-8C88-F2C31355BFF4} = {327B2A49-F8CF-4671-9A6D-2A391769F13F}
+		{97573853-719F-45D7-AAB2-8FE684ABC6BB} = {445CC7E9-D10E-474A-A4D4-340B130856A6}
+		{EDC9A46D-B391-41FD-92FD-91F55710FD17} = {445CC7E9-D10E-474A-A4D4-340B130856A6}
+		{CEAC221A-3167-4710-86C8-DF0C6DBF4711} = {327B2A49-F8CF-4671-9A6D-2A391769F13F}
+		{FF4FD0F7-93B0-4909-B82B-5A6D66BFD947} = {703694BD-CC47-44F0-9F58-C34D117602D3}
+		{72DDEC13-7826-4031-9E0A-20DCE51DA10A} = {FF4FD0F7-93B0-4909-B82B-5A6D66BFD947}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11DF1373-36AF-4E10-95D9-12007D19640F}
+	EndGlobalSection
+EndGlobal
