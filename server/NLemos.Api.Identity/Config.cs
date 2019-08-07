@@ -16,6 +16,10 @@ namespace NLemos.Api.Identity
                 {
                     var builder = new ConfigurationBuilder()
                         .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                        .AddJsonFile("appsettings.development.json", optional: true, reloadOnChange: true)
+                        .AddJsonFile("appsettings.Development.json", optional: true, reloadOnChange: true)
+                        .AddJsonFile("appsettings.production.json", optional: true, reloadOnChange: true)
+                        .AddJsonFile("appsettings.Production.json", optional: true, reloadOnChange: true)
                         .AddEnvironmentVariables();
                     _config = builder.Build();
                 }
@@ -35,7 +39,11 @@ namespace NLemos.Api.Identity
                 new Scope
                 {
                     Name = _scopeName,
-                    Description = _scopeDescription
+                    Description = _scopeDescription,
+                    UserClaims = new List<string>
+                    {
+                        "role"
+                    }
                 }
             };
         }

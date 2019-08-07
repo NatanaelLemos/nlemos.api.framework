@@ -35,11 +35,13 @@ namespace NLemos.Api.Identity.Security
                 new Claim(JwtClaimTypes.EmailVerified, "true", ClaimValueTypes.Boolean)
             };
 
+            claims.AddRange(user.Claims.Select(c => new Claim(JwtClaimTypes.Role, c)));
             context.IssuedClaims = claims;
         }
 
         public Task IsActiveAsync(IsActiveContext context)
         {
+            //TODO: Check if user is activated
             return Task.FromResult(true);
         }
     }
